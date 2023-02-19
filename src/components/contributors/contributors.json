@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_contributors_contributors",
+  "info": {
+    "displayName": "contributors"
+  },
+  "options": {},
+  "attributes": {
+    "number_of_contributors": {
+      "type": "integer"
+    },
+    "type_of_contributor": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_project_link_project_links",
+  "info": {
+    "displayName": "project_link"
+  },
+  "options": {},
+  "attributes": {
+    "link_type": {
+      "type": "string",
+      "default": "Website"
+    },
+    "url": {
+      "type": "string"
+    },
+    "link_holder": {
+      "type": "string"
+    }
+  }
+}

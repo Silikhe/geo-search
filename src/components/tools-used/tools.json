@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_tools_used_tools",
+  "info": {
+    "displayName": "tools"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "tool_name": {
+      "type": "string"
+    }
+  }
+}

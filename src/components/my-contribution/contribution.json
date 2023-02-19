@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_my_contribution_contributions",
+  "info": {
+    "displayName": "contribution"
+  },
+  "options": {},
+  "attributes": {
+    "contribution_type": {
+      "type": "string"
+    },
+    "percent": {
+      "type": "integer"
+    }
+  }
+}

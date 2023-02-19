@@ -1,0 +1,98 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cases",
+  "info": {
+    "singularName": "case",
+    "pluralName": "cases",
+    "displayName": "case"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "project_type": {
+      "type": "string",
+      "required": true
+    },
+    "project_cover": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "role": {
+      "type": "string",
+      "required": true,
+      "default": "Product Designer"
+    },
+    "context": {
+      "type": "string",
+      "required": true
+    },
+    "duration": {
+      "type": "string",
+      "required": true
+    },
+    "individual_contribution": {
+      "type": "string",
+      "required": true
+    },
+    "contribution": {
+      "displayName": "contribution",
+      "type": "component",
+      "repeatable": true,
+      "component": "my-contribution.contribution"
+    },
+    "about_company": {
+      "type": "text",
+      "required": true
+    },
+    "design_challenge": {
+      "type": "text",
+      "required": true
+    },
+    "project_logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "links": {
+      "displayName": "project_link",
+      "type": "component",
+      "repeatable": true,
+      "component": "project-link.project-link"
+    },
+    "tools_used": {
+      "displayName": "tools",
+      "type": "component",
+      "repeatable": true,
+      "component": "tools-used.tools"
+    },
+    "contributors": {
+      "displayName": "contributors",
+      "type": "component",
+      "repeatable": true,
+      "component": "contributors.contributors"
+    },
+    "case_study": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
