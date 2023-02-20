@@ -4,7 +4,8 @@
   "info": {
     "singularName": "case",
     "pluralName": "cases",
-    "displayName": "case"
+    "displayName": "case",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,15 +21,15 @@
       "required": true
     },
     "project_cover": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": true
+      ]
     },
     "role": {
       "type": "string",
@@ -62,15 +63,15 @@
       "required": true
     },
     "project_logo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": true
+      ]
     },
     "links": {
       "displayName": "project_link",
@@ -92,6 +93,20 @@
     },
     "case_study": {
       "type": "richtext",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "featured": {
+      "displayName": "featured",
+      "type": "component",
+      "repeatable": false,
+      "component": "featured.featured"
+    },
+    "project_intro": {
+      "type": "text",
       "required": true
     }
   }
